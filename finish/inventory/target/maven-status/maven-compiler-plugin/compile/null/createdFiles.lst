@@ -1,0 +1,6 @@
+io/openliberty/guides/inventory/health/InventoryReadinessCheck.class
+io/openliberty/guides/inventory/InventoryManager.class
+io/openliberty/guides/inventory/InventoryApplication.class
+io/openliberty/guides/inventory/InventoryQueueListener.class
+io/openliberty/guides/inventory/health/InventoryLivenessCheck.class
+io/openliberty/guides/inventory/InventoryResource.class

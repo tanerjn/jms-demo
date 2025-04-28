@@ -1,0 +1,18 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2 28/04/2025, 12:29:46:015 CEST 28/04/2025, 12:29:46:573 CEST com.ibm.websphere.sib.exception.SIResourceException com.ibm.ws.sib.api.jmsra.impl.JmsJcaManagedConnectionFactoryImpl.createManagedConnection 1
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.0.log
+     1      2 28/04/2025, 12:29:46:045 CEST 28/04/2025, 12:29:46:573 CEST jakarta.resource.ResourceException com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper 199
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.1.log
+     2      2 28/04/2025, 12:29:46:077 CEST 28/04/2025, 12:29:46:574 CEST jakarta.resource.spi.ResourceAllocationException com.ibm.ws.sib.api.jmsra.impl.JmsJcaConnectionFactoryImpl.createConnection 1
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.2.log
+     3      2 28/04/2025, 12:29:46:103 CEST 28/04/2025, 12:29:46:574 CEST com.ibm.websphere.sib.exception.SIResourceException JmsManagedConnectionFactoryImpl.createConnection JmsManagedConnectionFactoryImpl.createConnection#3
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.3.log
+     4      2 28/04/2025, 12:29:46:111 CEST 28/04/2025, 12:29:46:574 CEST jakarta.jms.JMSRuntimeException com.ibm.ws.cdi.jms.JMSContextInjected 159
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.4.log
+     5      2 28/04/2025, 12:29:46:123 CEST 28/04/2025, 12:29:46:575 CEST java.lang.RuntimeException com.ibm.ejs.container.TimedObjectWrapper.invokeCallback 83
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.5.log
+     6      2 28/04/2025, 12:29:46:519 CEST 28/04/2025, 12:29:46:595 CEST java.lang.RuntimeException com.ibm.ejs.container.LocalExceptionMappingStrategy.setUncheckedException 178
+                                                                            - /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_25.04.28_12.29.46.6.log
+------+------+---------------------------+---------------------------+---------------------------

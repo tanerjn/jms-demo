@@ -1,0 +1,2 @@
+/opt/prj/guide-jms-intro/start/system/src/main/java/io/openliberty/guides/system/health/SystemLivenessCheck.java
+/opt/prj/guide-jms-intro/start/system/src/main/java/io/openliberty/guides/system/health/SystemReadinessCheck.java

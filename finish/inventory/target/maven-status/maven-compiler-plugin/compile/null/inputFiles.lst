@@ -1,0 +1,6 @@
+/opt/prj/guide-jms-intro/finish/inventory/src/main/java/io/openliberty/guides/inventory/InventoryApplication.java
+/opt/prj/guide-jms-intro/finish/inventory/src/main/java/io/openliberty/guides/inventory/InventoryManager.java
+/opt/prj/guide-jms-intro/finish/inventory/src/main/java/io/openliberty/guides/inventory/InventoryQueueListener.java
+/opt/prj/guide-jms-intro/finish/inventory/src/main/java/io/openliberty/guides/inventory/InventoryResource.java
+/opt/prj/guide-jms-intro/finish/inventory/src/main/java/io/openliberty/guides/inventory/health/InventoryLivenessCheck.java
+/opt/prj/guide-jms-intro/finish/inventory/src/main/java/io/openliberty/guides/inventory/health/InventoryReadinessCheck.java

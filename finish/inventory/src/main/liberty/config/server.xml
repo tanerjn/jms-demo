@@ -1,0 +1,71 @@
+<server description="Inventory Service">
+
+  <featureManager>
+    <platform>jakartaee-10.0</platform>
+    <platform>microprofile-7.0</platform>
+    <feature>restfulWS</feature>
+    <feature>cdi</feature>
+    <feature>jsonb</feature>
+    <feature>mpHealth</feature>
+    <feature>mpConfig</feature>
+    <!-- tag::messaging[] -->
+    <feature>messaging</feature>
+    <!-- end::messaging[] -->
+    <!-- tag::messagingServer[] -->
+    <feature>messagingServer</feature>
+    <!-- end::messagingServer[] -->
+    <!-- tag::messagingClient[] -->
+    <feature>messagingClient</feature>
+    <!-- end::messagingClient[] -->
+    <feature>enterpriseBeansLite</feature>
+    <feature>mdb</feature>
+  </featureManager>
+
+  <variable name="http.port" defaultValue="9081"/>
+  <variable name="https.port" defaultValue="9444"/>
+
+  <httpEndpoint id="defaultHttpEndpoint" host="*"
+                httpPort="${http.port}" httpsPort="${https.port}" />
+
+  <!-- tag::wasJmsEndpoint[] -->
+  <wasJmsEndpoint id="InboundJmsCommsEndpoint"
+                  host="*"
+                  wasJmsPort="7277"
+                  wasJmsSSLPort="9101"/>
+  <!-- end::wasJmsEndpoint[] -->
+
+  <!-- tag::connectionManager[] -->
+  <connectionManager id="InventoryCM" maxPoolSize="400" minPoolSize="1"/>
+  <!-- end::connectionManager[] -->
+
+  <!-- tag::messagingEngine[] -->
+  <messagingEngine id="InventoryME">
+    <queue id="InventoryQueue"
+           maxQueueDepth="5000"/>
+  </messagingEngine>
+  <!-- end::messagingEngine[] -->
+
+  <!-- tag::jmsConnectionFactory[] -->
+  <jmsConnectionFactory connectionManagerRef="InventoryCM"
+                        jndiName="InventoryConnectionFactory">
+    <properties.wasJms/>
+  </jmsConnectionFactory>
+  <!-- end::jmsConnectionFactory[] -->
+
+  <!-- tag::jmsQueue[] -->
+  <jmsQueue id="InventoryQueue" jndiName="jms/InventoryQueue">
+    <properties.wasJms queueName="InventoryQueue"/>
+  </jmsQueue>
+  <!-- end::jmsQueue[] -->
+
+  <!-- tag::jmsActivationSpec[] -->
+  <jmsActivationSpec id="guide-jms-intro-inventory/InventoryQueueListener">
+    <properties.wasJms maxConcurrency="200"/>
+  </jmsActivationSpec>
+  <!-- end::jmsActivationSpec[] -->
+
+  <logging consoleLogLevel="INFO"/>
+
+  <webApplication location="guide-jms-intro-inventory.war" contextRoot="/"/>
+
+</server>

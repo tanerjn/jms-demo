@@ -1,0 +1,78 @@
+------Start of DE processing------ = [28/04/2025, 12:40:45:303 CEST]
+Exception = jakarta.json.bind.JsonbException
+Source = com.ibm.ejs.container.LocalExceptionMappingStrategy.setUncheckedException
+probeid = 178
+Stack Dump = jakarta.json.bind.JsonbException: Unable to serialize property 'recentLoad' from io.openliberty.guides.models.SystemLoad
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:43)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.serialize(ObjectSerializer.java:38)
+	at org.eclipse.yasson.internal.serializer.RecursionChecker.serialize(RecursionChecker.java:38)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.SerializationContextImpl.serializeObject(SerializationContextImpl.java:197)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:133)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:159)
+	at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:131)
+	at io.openliberty.guides.models.SystemLoad.toString(SystemLoad.java:54)
+	at io.openliberty.guides.system.SystemService.sendSystemLoad(SystemService.java:69)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.EJSContainer.invokeProceed(EJSContainer.java:4888)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:594)
+	at com.ibm.ws.cdi.ejb.impl.InterceptorChain.proceed(InterceptorChain.java:121)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.invokeInterceptors(EJBCDIInterceptorWrapper.java:133)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.aroundTimeout(EJBCDIInterceptorWrapper.java:62)
+	at jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at com.ibm.ws.cdi.ejb.interceptor.WeldSessionBeanInterceptorWrapper.aroundInvoke(WeldSessionBeanInterceptorWrapper.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInterceptor(InvocationContextImpl.java:300)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInvoke(InvocationContextImpl.java:269)
+	at com.ibm.ejs.container.EJSContainer.invoke(EJSContainer.java:4790)
+	at com.ibm.ejs.container.TimedObjectWrapper.invokeCallback(TimedObjectWrapper.java:89)
+	at com.ibm.ejs.container.TimerNpRunnable.doWork(TimerNpRunnable.java:232)
+	at com.ibm.ejs.container.TimerNpRunnable.run(TimerNpRunnable.java:146)
+	at com.ibm.ws.context.service.serializable.ContextualRunnable.run(ContextualRunnable.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:298)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: jakarta.json.stream.JsonGenerationException: Generating incomplete JSON
+		at org.eclipse.parsson.JsonGeneratorImpl.close(JsonGeneratorImpl.java:521)
+		at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:130)
+		... 35 more
+Caused by: java.lang.NumberFormatException: double value cannot be Infinite or NaN
+	at org.eclipse.parsson.JsonGeneratorImpl.write(JsonGeneratorImpl.java:387)
+	at org.eclipse.yasson.internal.serializer.types.DoubleSerializer.writeValue(DoubleSerializer.java:28)
+	at org.eclipse.yasson.internal.serializer.types.DoubleSerializer.writeValue(DoubleSerializer.java:20)
+	at org.eclipse.yasson.internal.serializer.types.AbstractNumberSerializer.lambda$actualSerializer$0(AbstractNumberSerializer.java:42)
+	at org.eclipse.yasson.internal.serializer.types.AbstractNumberSerializer.serializeValue(AbstractNumberSerializer.java:52)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer$ValueSerializer.serialize(TypeSerializer.java:51)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer.serialize(TypeSerializer.java:37)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.ValueGetterSerializer.serialize(ValueGetterSerializer.java:43)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:41)
+	... 45 more
+
+Dump of callerThis
+Object type = com.ibm.ejs.container.LocalExceptionMappingStrategy
+  CLASS_NAME = "com.ibm.ejs.container.LocalExceptionMappingStrategy"
+  tc = class com.ibm.websphere.ras.TraceComponent@59c6d737
+    strings[0] = "TraceComponent[com.ibm.ejs.container.LocalExceptionMappingStrategy,class com.ibm.ejs.container.LocalExceptionMappingStrategy,[EJBContainer],com.ibm.ejs.container.container,null]"
+  INSTANCE = class com.ibm.ejs.container.LocalExceptionMappingStrategy@537f98b1
+  tc = class com.ibm.websphere.ras.TraceComponent@91b7c62
+    strings[0] = "TraceComponent[com.ibm.ejs.container.ExceptionMappingStrategy,class com.ibm.ejs.container.ExceptionMappingStrategy,[EJBContainer],com.ibm.ejs.container.container,null]"
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/opt/prj/guide-jms-intro/start/system/target/classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/jakarta/json/jakarta.json-api/2.1.0/jakarta.json-api-2.1.0.jar" targetInArchive="/WEB-INF/lib/jakarta.json-api-2.1.0.jar"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/jakarta/json/bind/jakarta.json.bind-api/3.0.0/jakarta.json.bind-api-3.0.0.jar" targetInArchive="/WEB-INF/lib/jakarta.json.bind-api-3.0.0.jar"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/io/openliberty/guides/guide-jms-intro-models/1.0-SNAPSHOT/guide-jms-intro-models-1.0-SNAPSHOT.jar" targetInArchive="/WEB-INF/lib/guide-jms-intro-models-1.0-SNAPSHOT.jar"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/org/eclipse/yasson/3.0.4/yasson-3.0.4.jar" targetInArchive="/WEB-INF/lib/yasson-3.0.4.jar"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/org/eclipse/parsson/parsson/1.1.7/parsson-1.1.7.jar" targetInArchive="/WEB-INF/lib/parsson-1.1.7.jar"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar" targetInArchive="/WEB-INF/lib/slf4j-api-2.0.17.jar"/>
+    <file sourceOnDisk="/Users/tanermetin/.m2/repository/org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17.jar" targetInArchive="/WEB-INF/lib/slf4j-simple-2.0.17.jar"/>
+    <file sourceOnDisk="/opt/prj/guide-jms-intro/start/system/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+</archive>

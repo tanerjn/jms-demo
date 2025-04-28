@@ -1,0 +1,101 @@
+------Start of DE processing------ = [28/04/2025, 12:27:31:078 CEST]
+Exception = jakarta.jms.JMSRuntimeException
+Source = com.ibm.ws.cdi.jms.JMSContextInjected
+probeid = 159
+Stack Dump = jakarta.jms.JMSRuntimeException: CWSIA0241E: An exception was received during the call to the method JmsManagedConnectionFactoryImpl.createConnection: com.ibm.websphere.sib.exception.SIResourceException: CWSIT0127E: Unable to contact the specified target messaging engines. See the linked exception for further details. Client connections were attempted to: [localhost:7277:BootstrapBasicMessaging].
+	at jdk.internal.reflect.GeneratedConstructorAccessor1164.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.ibm.ws.sib.api.jms.impl.JmsErrorUtils.getJMS2Exception(JmsErrorUtils.java:493)
+	at com.ibm.ws.sib.api.jms.impl.JmsManagedConnectionFactoryImpl.createContext(JmsManagedConnectionFactoryImpl.java:740)
+	at com.ibm.ws.cdi.jms.JMSContextInjected.createJMSContext(JMSContextInjected.java:86)
+	at com.ibm.ws.cdi.jms.JMSContextInjected.getInternalJMSContext(JMSContextInjected.java:128)
+	at com.ibm.ws.cdi.jms.JMSContextInjected.createProducer(JMSContextInjected.java:252)
+	at io.openliberty.guides.system.SystemService.sendSystemLoad(SystemService.java:69)
+	at jdk.internal.reflect.GeneratedMethodAccessor620.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.EJSContainer.invokeProceed(EJSContainer.java:4888)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:594)
+	at com.ibm.ws.cdi.ejb.impl.InterceptorChain.proceed(InterceptorChain.java:121)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.invokeInterceptors(EJBCDIInterceptorWrapper.java:133)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.aroundTimeout(EJBCDIInterceptorWrapper.java:62)
+	at jdk.internal.reflect.GeneratedMethodAccessor619.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at com.ibm.ws.cdi.ejb.interceptor.WeldSessionBeanInterceptorWrapper.aroundInvoke(WeldSessionBeanInterceptorWrapper.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor618.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInterceptor(InvocationContextImpl.java:300)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInvoke(InvocationContextImpl.java:269)
+	at com.ibm.ejs.container.EJSContainer.invoke(EJSContainer.java:4790)
+	at com.ibm.ejs.container.TimedObjectWrapper.invokeCallback(TimedObjectWrapper.java:89)
+	at com.ibm.ejs.container.TimerNpRunnable.doWork(TimerNpRunnable.java:232)
+	at com.ibm.ejs.container.TimerNpRunnable.run(TimerNpRunnable.java:146)
+	at com.ibm.ws.context.service.serializable.ContextualRunnable.run(ContextualRunnable.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:298)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.ibm.websphere.sib.exception.SIResourceException: CWSIT0127E: Unable to contact the specified target messaging engines. See the linked exception for further details. Client connections were attempted to: [localhost:7277:BootstrapBasicMessaging]
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.generateException(TrmSICoreConnectionFactoryImpl.java:510)
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.remoteBootstrap(TrmSICoreConnectionFactoryImpl.java:331)
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.createConnection(TrmSICoreConnectionFactoryImpl.java:164)
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.createConnection(TrmSICoreConnectionFactoryImpl.java:109)
+	at com.ibm.ws.sib.api.jmsra.impl.JmsJcaManagedConnectionFactoryImpl.createManagedConnection(JmsJcaManagedConnectionFactoryImpl.java:382)
+	at com.ibm.ejs.j2c.FreePool.createManagedConnectionWithMCWrapper(FreePool.java:1389)
+	at com.ibm.ejs.j2c.FreePool.createOrWaitForConnection(FreePool.java:1263)
+	at com.ibm.ejs.j2c.PoolManager.reserve(PoolManager.java:1471)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateMCWrapper(ConnectionManager.java:576)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateConnection(ConnectionManager.java:308)
+	at com.ibm.ws.sib.api.jmsra.impl.JmsJcaConnectionFactoryImpl.createConnection(JmsJcaConnectionFactoryImpl.java:223)
+	at com.ibm.ws.sib.api.jms.impl.JmsManagedConnectionFactoryImpl.createConnection(JmsManagedConnectionFactoryImpl.java:110)
+	at com.ibm.ws.sib.api.jms.impl.JmsManagedConnectionFactoryImpl.createContext(JmsManagedConnectionFactoryImpl.java:735)
+	... 34 more
+Caused by: com.ibm.websphere.sib.exception.SIResourceException: CWSIT0131W: Unable to connect to the target messaging engine at localhost:7277:BootstrapBasicMessaging because of the exception: com.ibm.websphere.sib.exception.SIResourceException: CWSIC1001E: A client attempted to connect with a remote messaging engine but the connection cannot be completed. Ensure the messaging engine is started: exception com.ibm.ws.sib.jfapchannel.JFapConnectFailedException: CWSIJ0063E: A network connection to host name localhost/127.0.0.1, port 7.277 cannot be established..
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.contactBootstrapService(TrmSICoreConnectionFactoryImpl.java:448)
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.remoteBootstrap(TrmSICoreConnectionFactoryImpl.java:279)
+	... 45 more
+Caused by: com.ibm.websphere.sib.exception.SIResourceException: CWSIC1001E: A client attempted to connect with a remote messaging engine but the connection cannot be completed. Ensure the messaging engine is started: exception com.ibm.ws.sib.jfapchannel.JFapConnectFailedException: CWSIJ0063E: A network connection to host name localhost/127.0.0.1, port 7.277 cannot be established..
+	at com.ibm.ws.sib.comms.client.ClientSideConnection.connect(ClientSideConnection.java:287)
+	at com.ibm.ws.sib.trm.client.TrmSICoreConnectionFactoryImpl.contactBootstrapService(TrmSICoreConnectionFactoryImpl.java:379)
+	... 46 more
+Caused by: com.ibm.ws.sib.jfapchannel.JFapConnectFailedException: CWSIJ0063E: A network connection to host name localhost/127.0.0.1, port 7.277 cannot be established.
+	at com.ibm.ws.sib.jfapchannel.impl.octracker.ConnectionDataGroup.connectOverNetwork(ConnectionDataGroup.java:802)
+	at com.ibm.ws.sib.jfapchannel.impl.octracker.ConnectionDataGroup.doConnect(ConnectionDataGroup.java:704)
+	at com.ibm.ws.sib.jfapchannel.impl.octracker.ConnectionDataGroup.connect(ConnectionDataGroup.java:632)
+	at com.ibm.ws.sib.jfapchannel.impl.octracker.OutboundConnectionTracker.connect(OutboundConnectionTracker.java:598)
+	at com.ibm.ws.sib.jfapchannel.impl.ClientConnectionManagerImpl.connect(ClientConnectionManagerImpl.java:97)
+	at com.ibm.ws.sib.comms.client.ClientSideConnection.connect(ClientSideConnection.java:165)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptConnectWork(WorkQueueManager.java:857)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:1007)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1061)
+	... 4 more
+
+Dump of callerThis
+Object type = com.ibm.ws.cdi.jms.JMSContextInjected
+  tc = class com.ibm.websphere.ras.TraceComponent@1ddd5e4a
+    strings[0] = "TraceComponent[com.ibm.ws.cdi.jms.JMSContextInjected,class com.ibm.ws.cdi.jms.JMSContextInjected,[JMSCDI],com.ibm.ws.cdi.jms.resources.CWSIAJMSCDIMessages,null]"
+  TSR_LOOKUP_NAME = "java:comp/TransactionSynchronizationRegistry"
+  internalJMSContext = null
+  jmsContextInfo = class com.ibm.ws.cdi.jms.JMSContextInfo@226de87b
+    connectionFactoryString = "InventoryConnectionFactory"
+    userName = null
+    password = null
+    acknowledgeMode = 1
+    serialVersionUID = 1683341457134199717
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@751877ca
+      strings[0] = "TraceComponent[com.ibm.ws.cdi.jms.JMSContextInfo,class com.ibm.ws.cdi.jms.JMSContextInfo,[JMSCDI],com.ibm.ws.cdi.jms.resources.CWSIAJMSCDIMessages,null]"
+  inTransaction = true
+  serialVersionUID = 3817704021737061441
+

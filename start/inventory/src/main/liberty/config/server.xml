@@ -1,0 +1,53 @@
+<server description="Inventory Service">
+
+  <featureManager>
+    <platform>jakartaee-10.0</platform>
+    <platform>microprofile-7.0</platform>
+    <feature>restfulWS</feature>
+    <feature>cdi</feature>
+    <feature>jsonb</feature>
+    <feature>mpHealth</feature>
+    <feature>mpConfig</feature>
+    <feature>messaging</feature>
+    <feature>messagingServer</feature>
+    <feature>messagingClient</feature>
+    <feature>enterpriseBeansLite</feature>
+    <feature>mdb</feature>
+  </featureManager>
+
+  <variable name="http.port" defaultValue="9081"/>
+  <variable name="https.port" defaultValue="9444"/>
+
+  <httpEndpoint id="defaultHttpEndpoint" host="*"
+                httpPort="${http.port}" httpsPort="${https.port}" />
+
+  <wasJmsEndpoint id="InboundJmsCommsEndpoint"
+                  host="*"
+                  wasJmsPort="7277"
+                  wasJmsSSLPort="9101"/>
+
+  <connectionManager id="InventoryCM" maxPoolSize="400" minPoolSize="1"/>
+
+  <messagingEngine id="InventoryME">
+    <queue id="InventoryQueue"
+           maxQueueDepth="5000"/>
+  </messagingEngine>
+
+  <jmsConnectionFactory connectionManagerRef="InventoryCM"
+                        jndiName="InventoryConnectionFactory">
+    <properties.wasJms/>
+  </jmsConnectionFactory>
+
+  <jmsQueue id="InventoryQueue" jndiName="jms/InventoryQueue">
+    <properties.wasJms queueName="InventoryQueue"/>
+  </jmsQueue>
+
+  <jmsActivationSpec id="guide-jms-intro-inventory/InventoryQueueListener">
+    <properties.wasJms maxConcurrency="200"/>
+  </jmsActivationSpec>
+
+  <logging consoleLogLevel="INFO"/>
+
+  <webApplication location="guide-jms-intro-inventory.war" contextRoot="/"/>
+
+</server>

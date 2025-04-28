@@ -1,0 +1,237 @@
+********************************************************************************
+product = Open Liberty 25.0.0.4 (wlp-1.0.100.cl250420250407-1902)
+wlp.install.dir = /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.11.jdk/Contents/Home
+java.version = 17.0.11
+java.runtime = OpenJDK Runtime Environment (17.0.11+9-adhoc.admin.jdk17u)
+os = Mac OS X (12.6.1; x86_64) (en_DE)
+process = 19970@mbp
+Classpath = /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/tanermetin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[28/04/2025, 12:30:30:410 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[28/04/2025, 12:30:31:607 CEST] 0000001c com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[28/04/2025, 12:30:31:925 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1,958 seconds
+[28/04/2025, 12:30:31:949 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[28/04/2025, 12:30:32:442 CEST] 0000001a com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[28/04/2025, 12:30:33:303 CEST] 0000001a org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP2)
+[28/04/2025, 12:30:34:161 CEST] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application guide-jms-intro-system.
+[28/04/2025, 12:30:34:163 CEST] 0000002b bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The guide-jms-intro-system application is using the loose application definition at the /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/apps/guide-jms-intro-system.war.xml location.
+[28/04/2025, 12:30:34:535 CEST] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: health.
+[28/04/2025, 12:30:34:539 CEST] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module health has been bound to default_host.
+[28/04/2025, 12:30:34:544 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.178.20:9082/health/
+[28/04/2025, 12:30:34:590 CEST] 00000026 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[28/04/2025, 12:30:34:613 CEST] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/health
+[28/04/2025, 12:30:34:647 CEST] 0000002c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[28/04/2025, 12:30:34:814 CEST] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckReadinessServlet]: Initialization successful.
+[28/04/2025, 12:30:34:820 CEST] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckServlet]: Initialization successful.
+[28/04/2025, 12:30:34:829 CEST] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckStartupServlet]: Initialization successful.
+[28/04/2025, 12:30:34:834 CEST] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckLivenessServlet]: Initialization successful.
+[28/04/2025, 12:30:35:140 CEST] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[28/04/2025, 12:30:36:219 CEST] 0000002b com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The guide-jms-intro-system.war EJB module in the guide-jms-intro-system application is starting.
+[28/04/2025, 12:30:36:225 CEST] 0000002b com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the io.openliberty.guides.system.SystemService interface of the SystemService enterprise bean in the guide-jms-intro-system.war module of the guide-jms-intro-system application.  The binding location is: ejblocal:guide-jms-intro-system/guide-jms-intro-system.war/SystemService#io.openliberty.guides.system.SystemService
+[28/04/2025, 12:30:36:230 CEST] 0000002b com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the io.openliberty.guides.system.SystemService interface of the SystemService enterprise bean in the guide-jms-intro-system.war module of the guide-jms-intro-system application.  The binding location is: ejblocal:io.openliberty.guides.system.SystemService
+[28/04/2025, 12:30:36:230 CEST] 0000002b com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the io.openliberty.guides.system.SystemService interface of the SystemService enterprise bean in the guide-jms-intro-system.war module of the guide-jms-intro-system application.  The binding location is: java:global/guide-jms-intro-system/SystemService!io.openliberty.guides.system.SystemService
+[28/04/2025, 12:30:36:246 CEST] 0000002b com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0219I: The server created 0 persistent automatic timer or timers and 1 non-persistent automatic timer or timers for the guide-jms-intro-system.war module.
+[28/04/2025, 12:30:36:247 CEST] 0000002b com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4001I: The guide-jms-intro-system.war EJB module in the guide-jms-intro-system application has started successfully.
+[28/04/2025, 12:30:36:248 CEST] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: guide-jms-intro-system.
+[28/04/2025, 12:30:36:248 CEST] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module guide-jms-intro-system has been bound to default_host.
+[28/04/2025, 12:30:36:248 CEST] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.178.20:9082/
+[28/04/2025, 12:30:36:252 CEST] 00000026 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/
+[28/04/2025, 12:30:36:253 CEST] 00000026 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[28/04/2025, 12:30:36:277 CEST] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application guide-jms-intro-system started in 2,112 seconds.
+[28/04/2025, 12:30:36:329 CEST] 00000025 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9082.
+[28/04/2025, 12:30:36:340 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-4.0, connectors-2.1, enterpriseBeansLite-4.0, jndi-1.0, json-1.0, jsonb-3.0, jsonp-2.1, mdb-4.0, messaging-3.1, messagingClient-3.0, mpConfig-3.1, mpHealth-4.0].
+[28/04/2025, 12:30:36:343 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 4,418 seconds.
+[28/04/2025, 12:30:36:345 CEST] 00000025 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 6,379 seconds.
+[28/04/2025, 12:30:36:355 CEST] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/prj/guide-jms-intro/finish/system/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[28/04/2025, 12:30:45:111 CEST] 00000027 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (defaultServer).
+[28/04/2025, 12:30:45:169 CEST] 00000027 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (defaultServer).
+[28/04/2025, 12:30:45:169 CEST] 00000038 com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[28/04/2025, 12:30:46:136 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.676923076923077}
+[28/04/2025, 12:31:00:010 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.2359081419624217}
+[28/04/2025, 12:31:15:006 CEST] 00000025 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.19201995012468828}
+[28/04/2025, 12:31:30:010 CEST] 00000037 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.36801242236024845}
+[28/04/2025, 12:31:45:018 CEST] 00000037 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.22082018927444794}
+[28/04/2025, 12:32:00:010 CEST] 00000025 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.18829113924050633}
+[28/04/2025, 12:32:15:011 CEST] 00000029 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.3740053050397878}
+[28/04/2025, 12:32:30:010 CEST] 00000037 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.26373626373626374}
+[28/04/2025, 12:32:45:012 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.075}
+[28/04/2025, 12:33:00:012 CEST] 0000002c io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.5128939828080229}
+[28/04/2025, 12:33:15:012 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.18421052631578946}
+[28/04/2025, 12:33:30:011 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.37797619047619047}
+[28/04/2025, 12:33:45:010 CEST] 0000002c io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.15037593984962405}
+[28/04/2025, 12:34:00:007 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.10543130990415335}
+[28/04/2025, 12:34:15:006 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.4401294498381877}
+[28/04/2025, 12:34:30:014 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.8338870431893688}
+[28/04/2025, 12:34:45:008 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.8518518518518519}
+[28/04/2025, 12:35:00:020 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.5576923076923077}
+[28/04/2025, 12:35:15:011 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.1263537906137184}
+[28/04/2025, 12:35:30:013 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.2126865671641791}
+[28/04/2025, 12:35:45:011 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.08949416342412451}
+[28/04/2025, 12:36:00:008 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.11020408163265306}
+[28/04/2025, 12:36:15:010 CEST] 00000045 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.2264957264957265}
+[28/04/2025, 12:36:30:011 CEST] 0000002c io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.1004566210045662}
+[28/04/2025, 12:36:45:009 CEST] 0000002c io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.16037735849056603}
+[28/04/2025, 12:37:00:009 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.11848341232227488}
+[28/04/2025, 12:37:15:007 CEST] 00000037 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.3333333333333333}
+[28/04/2025, 12:37:30:006 CEST] 00000045 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.15425531914893617}
+[28/04/2025, 12:37:45:009 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.3672316384180791}
+[28/04/2025, 12:38:00:010 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.08333333333333333}
+[28/04/2025, 12:38:15:009 CEST] 00000029 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.08843537414965986}
+[28/04/2025, 12:38:30:007 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.12686567164179105}
+[28/04/2025, 12:38:45:012 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.13178294573643412}
+[28/04/2025, 12:39:00:000 CEST] 00000037 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.2542372881355932}
+[28/04/2025, 12:39:14:982 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.25471698113207547}
+[28/04/2025, 12:39:30:000 CEST] 00000029 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.1111111111111111}
+[28/04/2025, 12:39:45:007 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.1016949152542373}
+[28/04/2025, 12:40:00:008 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.3}
+[28/04/2025, 12:40:15:008 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.47619047619047616}
+[28/04/2025, 12:40:30:011 CEST] 00000037 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.09375}
+[28/04/2025, 12:40:45:037 CEST] 00000045 org.eclipse.yasson.internal.SerializationContextImpl         E Generating incomplete JSON
+[28/04/2025, 12:40:45:234 CEST] 00000045 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.json.bind.JsonbException: Unable to serialize property 'recentLoad' from io.openliberty.guides.models.SystemLoad com.ibm.ejs.container.TimedObjectWrapper.invokeCallback 83" at ffdc_25.04.28_12.40.45.0.log
+[28/04/2025, 12:40:45:241 CEST] 00000045 com.ibm.ejs.container.LocalExceptionMappingStrategy          E CNTR0020E: EJB threw an unexpected (non-declared) exception during invocation of method "sendSystemLoad" on bean "BeanId(guide-jms-intro-system#guide-jms-intro-system.war#SystemService, null)". Exception data: jakarta.json.bind.JsonbException: Unable to serialize property 'recentLoad' from io.openliberty.guides.models.SystemLoad
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:43)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.serialize(ObjectSerializer.java:38)
+	at org.eclipse.yasson.internal.serializer.RecursionChecker.serialize(RecursionChecker.java:38)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.SerializationContextImpl.serializeObject(SerializationContextImpl.java:197)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:133)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:159)
+	at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:131)
+	at io.openliberty.guides.models.SystemLoad.toString(SystemLoad.java:54)
+	at io.openliberty.guides.system.SystemService.sendSystemLoad(SystemService.java:69)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.EJSContainer.invokeProceed(EJSContainer.java:4888)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:594)
+	at com.ibm.ws.cdi.ejb.impl.InterceptorChain.proceed(InterceptorChain.java:121)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.invokeInterceptors(EJBCDIInterceptorWrapper.java:133)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.aroundTimeout(EJBCDIInterceptorWrapper.java:62)
+	at jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at com.ibm.ws.cdi.ejb.interceptor.WeldSessionBeanInterceptorWrapper.aroundInvoke(WeldSessionBeanInterceptorWrapper.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInterceptor(InvocationContextImpl.java:300)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInvoke(InvocationContextImpl.java:269)
+	at com.ibm.ejs.container.EJSContainer.invoke(EJSContainer.java:4790)
+	at com.ibm.ejs.container.TimedObjectWrapper.invokeCallback(TimedObjectWrapper.java:89)
+	at com.ibm.ejs.container.TimerNpRunnable.doWork(TimerNpRunnable.java:232)
+	at com.ibm.ejs.container.TimerNpRunnable.run(TimerNpRunnable.java:146)
+	at com.ibm.ws.context.service.serializable.ContextualRunnable.run(ContextualRunnable.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:298)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: jakarta.json.stream.JsonGenerationException: Generating incomplete JSON
+		at org.eclipse.parsson.JsonGeneratorImpl.close(JsonGeneratorImpl.java:521)
+		at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:130)
+		... 35 more
+Caused by: java.lang.NumberFormatException: double value cannot be Infinite or NaN
+	at org.eclipse.parsson.JsonGeneratorImpl.write(JsonGeneratorImpl.java:387)
+	at org.eclipse.yasson.internal.serializer.types.DoubleSerializer.writeValue(DoubleSerializer.java:28)
+	at org.eclipse.yasson.internal.serializer.types.DoubleSerializer.writeValue(DoubleSerializer.java:20)
+	at org.eclipse.yasson.internal.serializer.types.AbstractNumberSerializer.lambda$actualSerializer$0(AbstractNumberSerializer.java:42)
+	at org.eclipse.yasson.internal.serializer.types.AbstractNumberSerializer.serializeValue(AbstractNumberSerializer.java:52)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer$ValueSerializer.serialize(TypeSerializer.java:51)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer.serialize(TypeSerializer.java:37)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.ValueGetterSerializer.serialize(ValueGetterSerializer.java:43)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:41)
+	... 45 more
+
+[28/04/2025, 12:40:45:307 CEST] 00000045 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.json.bind.JsonbException: Unable to serialize property 'recentLoad' from io.openliberty.guides.models.SystemLoad com.ibm.ejs.container.LocalExceptionMappingStrategy.setUncheckedException 178" at ffdc_25.04.28_12.40.45.1.log
+[28/04/2025, 12:40:45:314 CEST] 00000045 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.5749235474006116}
+[28/04/2025, 12:41:00:009 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.2222222222222222}
+[28/04/2025, 12:41:15:021 CEST] 00000036 org.eclipse.yasson.internal.SerializationContextImpl         E Generating incomplete JSON
+[28/04/2025, 12:41:15:022 CEST] 00000036 com.ibm.ejs.container.LocalExceptionMappingStrategy          E CNTR0020E: EJB threw an unexpected (non-declared) exception during invocation of method "sendSystemLoad" on bean "BeanId(guide-jms-intro-system#guide-jms-intro-system.war#SystemService, null)". Exception data: jakarta.json.bind.JsonbException: Unable to serialize property 'recentLoad' from io.openliberty.guides.models.SystemLoad
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:43)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.serialize(ObjectSerializer.java:38)
+	at org.eclipse.yasson.internal.serializer.RecursionChecker.serialize(RecursionChecker.java:38)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullVisibilitySwitcher.serialize(NullVisibilitySwitcher.java:40)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.SerializationContextImpl.serializeObject(SerializationContextImpl.java:197)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:133)
+	at org.eclipse.yasson.internal.SerializationContextImpl.marshall(SerializationContextImpl.java:159)
+	at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:131)
+	at io.openliberty.guides.models.SystemLoad.toString(SystemLoad.java:54)
+	at io.openliberty.guides.system.SystemService.sendSystemLoad(SystemService.java:69)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.EJSContainer.invokeProceed(EJSContainer.java:4888)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:594)
+	at com.ibm.ws.cdi.ejb.impl.InterceptorChain.proceed(InterceptorChain.java:121)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.invokeInterceptors(EJBCDIInterceptorWrapper.java:133)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.aroundTimeout(EJBCDIInterceptorWrapper.java:62)
+	at jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at com.ibm.ws.cdi.ejb.interceptor.WeldSessionBeanInterceptorWrapper.aroundInvoke(WeldSessionBeanInterceptorWrapper.java:60)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInterceptor(InvocationContextImpl.java:300)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInvoke(InvocationContextImpl.java:269)
+	at com.ibm.ejs.container.EJSContainer.invoke(EJSContainer.java:4790)
+	at com.ibm.ejs.container.TimedObjectWrapper.invokeCallback(TimedObjectWrapper.java:89)
+	at com.ibm.ejs.container.TimerNpRunnable.doWork(TimerNpRunnable.java:232)
+	at com.ibm.ejs.container.TimerNpRunnable.run(TimerNpRunnable.java:146)
+	at com.ibm.ws.context.service.serializable.ContextualRunnable.run(ContextualRunnable.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:298)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	Suppressed: jakarta.json.stream.JsonGenerationException: Generating incomplete JSON
+		at org.eclipse.parsson.JsonGeneratorImpl.close(JsonGeneratorImpl.java:521)
+		at org.eclipse.yasson.internal.JsonBinding.toJson(JsonBinding.java:130)
+		... 35 more
+Caused by: java.lang.NumberFormatException: double value cannot be Infinite or NaN
+	at org.eclipse.parsson.JsonGeneratorImpl.write(JsonGeneratorImpl.java:387)
+	at org.eclipse.yasson.internal.serializer.types.DoubleSerializer.writeValue(DoubleSerializer.java:28)
+	at org.eclipse.yasson.internal.serializer.types.DoubleSerializer.writeValue(DoubleSerializer.java:20)
+	at org.eclipse.yasson.internal.serializer.types.AbstractNumberSerializer.lambda$actualSerializer$0(AbstractNumberSerializer.java:42)
+	at org.eclipse.yasson.internal.serializer.types.AbstractNumberSerializer.serializeValue(AbstractNumberSerializer.java:52)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer$ValueSerializer.serialize(TypeSerializer.java:51)
+	at org.eclipse.yasson.internal.serializer.types.TypeSerializer.serialize(TypeSerializer.java:37)
+	at org.eclipse.yasson.internal.serializer.KeyWriter.serialize(KeyWriter.java:41)
+	at org.eclipse.yasson.internal.serializer.NullSerializer.serialize(NullSerializer.java:67)
+	at org.eclipse.yasson.internal.serializer.ValueGetterSerializer.serialize(ValueGetterSerializer.java:43)
+	at org.eclipse.yasson.internal.serializer.ObjectSerializer.lambda$serialize$0(ObjectSerializer.java:41)
+	... 45 more
+
+[28/04/2025, 12:41:15:217 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.7383966244725738}
+[28/04/2025, 12:41:30:005 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.24570446735395188}
+[28/04/2025, 12:41:45:027 CEST] 00000036 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.11764705882352941}
+[28/04/2025, 12:42:00:007 CEST] 00000046 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.10714285714285714}
+[28/04/2025, 12:42:15:006 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.0650994575045208}
+[28/04/2025, 12:42:30:005 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.3188976377952756}
+[28/04/2025, 12:42:45:011 CEST] 00000048 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.074}
+[28/04/2025, 12:43:00:009 CEST] 0000004c io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.2289156626506024}
+[28/04/2025, 12:43:15:008 CEST] 0000004e io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.06201550387596899}
+[28/04/2025, 12:43:30:008 CEST] 0000004c io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.10978043912175649}
+[28/04/2025, 12:43:45:008 CEST] 00000027 io.openliberty.guides.system.SystemService                   I {"hostname":"mbp","recentLoad":0.05788423153692615}

@@ -1,0 +1,108 @@
+********************************************************************************
+product = Open Liberty 25.0.0.4 (wlp-1.0.100.cl250420250407-1902)
+wlp.install.dir = /opt/prj/guide-jms-intro/finish/inventory/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.11.jdk/Contents/Home
+java.version = 17.0.11
+java.runtime = OpenJDK Runtime Environment (17.0.11+9-adhoc.admin.jdk17u)
+os = Mac OS X (12.6.1; x86_64) (en_DE)
+process = 19886@mbp
+Classpath = /opt/prj/guide-jms-intro/finish/inventory/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/tanermetin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[28/04/2025, 12:29:56:365 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[28/04/2025, 12:29:57:709 CEST] 0000001e com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /opt/prj/guide-jms-intro/finish/inventory/target/liberty/wlp/usr/servers/defaultServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[28/04/2025, 12:29:58:012 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 2,482 seconds
+[28/04/2025, 12:29:58:035 CEST] 00000027 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[28/04/2025, 12:29:58:740 CEST] 0000001b com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[28/04/2025, 12:30:01:267 CEST] 0000001d org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP2)
+[28/04/2025, 12:30:02:685 CEST] 0000001c com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[28/04/2025, 12:30:03:735 CEST] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application guide-jms-intro-inventory.
+[28/04/2025, 12:30:03:736 CEST] 0000002c bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The guide-jms-intro-inventory application is using the loose application definition at the /opt/prj/guide-jms-intro/finish/inventory/target/liberty/wlp/usr/servers/defaultServer/apps/guide-jms-intro-inventory.war.xml location.
+[28/04/2025, 12:30:04:221 CEST] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: health.
+[28/04/2025, 12:30:04:228 CEST] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module health has been bound to default_host.
+[28/04/2025, 12:30:04:230 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.178.20:9081/health/
+[28/04/2025, 12:30:04:383 CEST] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[28/04/2025, 12:30:04:388 CEST] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/health
+[28/04/2025, 12:30:04:396 CEST] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[28/04/2025, 12:30:04:404 CEST] 0000002a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[28/04/2025, 12:30:04:527 CEST] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckReadinessServlet]: Initialization successful.
+[28/04/2025, 12:30:04:530 CEST] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckServlet]: Initialization successful.
+[28/04/2025, 12:30:04:532 CEST] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckStartupServlet]: Initialization successful.
+[28/04/2025, 12:30:04:534 CEST] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [io.openliberty.microprofile.health.4.0.internal.jakarta] [/health] [HealthCheckLivenessServlet]: Initialization successful.
+[28/04/2025, 12:30:05:053 CEST] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/prj/guide-jms-intro/finish/inventory/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[28/04/2025, 12:30:06:682 CEST] 0000002c com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The guide-jms-intro-inventory.war EJB module in the guide-jms-intro-inventory application is starting.
+[28/04/2025, 12:30:06:791 CEST] 0000002c com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The InventoryQueueListener message-driven bean in the guide-jms-intro-inventory.war module of the guide-jms-intro-inventory application is bound to the guide-jms-intro-inventory/InventoryQueueListener activation specification.
+[28/04/2025, 12:30:06:800 CEST] 0000002c com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4001I: The guide-jms-intro-inventory.war EJB module in the guide-jms-intro-inventory application has started successfully.
+[28/04/2025, 12:30:06:801 CEST] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: guide-jms-intro-inventory.
+[28/04/2025, 12:30:06:802 CEST] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module guide-jms-intro-inventory has been bound to default_host.
+[28/04/2025, 12:30:06:802 CEST] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.178.20:9081/
+[28/04/2025, 12:30:06:820 CEST] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/
+[28/04/2025, 12:30:06:821 CEST] 0000002a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[28/04/2025, 12:30:06:877 CEST] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application guide-jms-intro-inventory started in 3,141 seconds.
+[28/04/2025, 12:30:06:911 CEST] 00000027 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9081.
+[28/04/2025, 12:30:06:917 CEST] 00000027 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel InboundJmsCommsEndpoint has been started and is now listening for requests on host *  (IPv6) port 7277.
+[28/04/2025, 12:30:06:976 CEST] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /opt/prj/guide-jms-intro/finish/inventory/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[28/04/2025, 12:30:07:122 CEST] 00000027 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (defaultServer).
+[28/04/2025, 12:30:07:238 CEST] 00000027 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (defaultServer).
+[28/04/2025, 12:30:07:238 CEST] 0000004c com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[28/04/2025, 12:30:07:389 CEST] 00000027 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination InventoryQueue on bus defaultBus has been successfully created.
+[28/04/2025, 12:30:07:391 CEST] 00000027 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification guide-jms-intro-inventory/InventoryQueueListener will now be able to receive the messages from destination InventoryQueue.
+[28/04/2025, 12:30:07:392 CEST] 00000027 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification guide-jms-intro-inventory/InventoryQueueListener and message driven bean application guide-jms-intro-inventory#guide-jms-intro-inventory.war#InventoryQueueListener is activated.
+[28/04/2025, 12:30:07:404 CEST] 00000027 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-4.0, connectors-2.1, enterpriseBeansLite-4.0, jndi-1.0, json-1.0, jsonb-3.0, jsonp-2.1, mdb-4.0, messaging-3.1, messagingClient-3.0, messagingServer-3.0, mpConfig-3.1, mpHealth-4.0, restfulWS-3.1, restfulWSClient-3.1].
+[28/04/2025, 12:30:07:405 CEST] 00000027 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 9,394 seconds.
+[28/04/2025, 12:30:07:406 CEST] 00000027 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 11,878 seconds.
+[28/04/2025, 12:30:07:704 CEST] 0000002a org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.openliberty.guides.inventory.InventoryApplication$Proxy$_$$_WeldClientProxy
+[28/04/2025, 12:30:07:774 CEST] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [guide-jms-intro-inventory] [/] [io.openliberty.guides.inventory.InventoryApplication]: Initialization successful.
+[28/04/2025, 12:30:46:435 CEST] 0000004b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was added: 0.676923076923077
+[28/04/2025, 12:31:00:022 CEST] 00000027 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.2359081419624217
+[28/04/2025, 12:31:15:016 CEST] 00000027 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.19201995012468828
+[28/04/2025, 12:31:30:025 CEST] 0000004a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.36801242236024845
+[28/04/2025, 12:31:45:109 CEST] 00000029 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.22082018927444794
+[28/04/2025, 12:32:00:017 CEST] 0000004a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.18829113924050633
+[28/04/2025, 12:32:15:018 CEST] 00000029 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.3740053050397878
+[28/04/2025, 12:32:30:026 CEST] 00000029 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.26373626373626374
+[28/04/2025, 12:32:45:019 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.075
+[28/04/2025, 12:33:00:018 CEST] 0000002c io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.5128939828080229
+[28/04/2025, 12:33:15:018 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.18421052631578946
+[28/04/2025, 12:33:30:019 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.37797619047619047
+[28/04/2025, 12:33:45:017 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.15037593984962405
+[28/04/2025, 12:34:00:013 CEST] 0000006c io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.10543130990415335
+[28/04/2025, 12:34:15:038 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.4401294498381877
+[28/04/2025, 12:34:30:021 CEST] 00000029 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.8338870431893688
+[28/04/2025, 12:34:45:013 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.8518518518518519
+[28/04/2025, 12:35:00:035 CEST] 0000006a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.5576923076923077
+[28/04/2025, 12:35:15:017 CEST] 00000029 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.1263537906137184
+[28/04/2025, 12:35:30:019 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.2126865671641791
+[28/04/2025, 12:35:45:017 CEST] 0000006a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.08949416342412451
+[28/04/2025, 12:36:00:014 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.11020408163265306
+[28/04/2025, 12:36:15:017 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.2264957264957265
+[28/04/2025, 12:36:30:017 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.1004566210045662
+[28/04/2025, 12:36:45:015 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.16037735849056603
+[28/04/2025, 12:37:00:020 CEST] 0000006a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.11848341232227488
+[28/04/2025, 12:37:15:014 CEST] 0000006c io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.3333333333333333
+[28/04/2025, 12:37:30:014 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.15425531914893617
+[28/04/2025, 12:37:45:017 CEST] 0000006a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.3672316384180791
+[28/04/2025, 12:38:00:019 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.08333333333333333
+[28/04/2025, 12:38:15:016 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.08843537414965986
+[28/04/2025, 12:38:30:012 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.12686567164179105
+[28/04/2025, 12:38:45:018 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.13178294573643412
+[28/04/2025, 12:39:00:008 CEST] 0000006a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.2542372881355932
+[28/04/2025, 12:39:14:988 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.25471698113207547
+[28/04/2025, 12:39:30:006 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.1111111111111111
+[28/04/2025, 12:39:45:013 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.1016949152542373
+[28/04/2025, 12:40:00:015 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.3
+[28/04/2025, 12:40:15:026 CEST] 0000002a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.47619047619047616
+[28/04/2025, 12:40:30:017 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.09375
+[28/04/2025, 12:40:45:322 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.5749235474006116
+[28/04/2025, 12:41:00:018 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.2222222222222222
+[28/04/2025, 12:41:15:236 CEST] 0000006b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.7383966244725738
+[28/04/2025, 12:41:30:010 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.24570446735395188
+[28/04/2025, 12:41:45:034 CEST] 0000006c io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.11764705882352941
+[28/04/2025, 12:42:00:013 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.10714285714285714
+[28/04/2025, 12:42:15:012 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.0650994575045208
+[28/04/2025, 12:42:30:012 CEST] 0000006d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.3188976377952756
+[28/04/2025, 12:42:45:018 CEST] 00000029 io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.074
+[28/04/2025, 12:43:00:014 CEST] 0000006a io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.2289156626506024
+[28/04/2025, 12:43:15:013 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.06201550387596899
+[28/04/2025, 12:43:30:015 CEST] 0000005d io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.10978043912175649
+[28/04/2025, 12:43:45:013 CEST] 0000005b io.openliberty.guides.inventory.InventoryQueueListener       I Host mbp was updated: 0.05788423153692615

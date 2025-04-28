@@ -1,0 +1,64 @@
+<server description="System Service">
+
+  <featureManager>
+    <platform>jakartaee-10.0</platform>
+    <platform>microprofile-7.0</platform>
+    <feature>cdi</feature>
+    <feature>jsonb</feature>
+    <feature>mpHealth</feature>
+    <feature>mpConfig</feature>
+    <feature>messaging</feature>
+    <feature>messagingClient</feature>
+    <feature>enterpriseBeansLite</feature>
+    <feature>mdb</feature>
+  </featureManager>
+
+  <variable name="http.port" defaultValue="9082"/>
+  <variable name="https.port" defaultValue="9445"/>
+  <!-- tag::jms[] -->
+  <variable name="inventory.jms.host" defaultValue="localhost"/>
+  <variable name="inventory.jms.port" defaultValue="7277"/>
+  <!-- end::jms[] -->
+  
+  <httpEndpoint id="defaultHttpEndpoint" host="*"
+                httpPort="${http.port}" httpsPort="${https.port}" />
+
+  <!-- tag::connectionManager[] -->
+  <connectionManager id="InventoryCM" maxPoolSize="400" minPoolSize="1"/>
+  <!-- end::connectionManager[] -->
+
+  <!-- tag::jmsConnectionFactory[] -->
+  <jmsConnectionFactory
+    connectionManagerRef="InventoryCM"
+    jndiName="InventoryConnectionFactory">
+  <!-- tag::properties.wmqjmsra[] -->
+    <properties.wmqjmsra
+      hostName="${ibmmq-hostname}"
+      port="${ibmmq-port}"
+      channel="${ibmmq-channel}"
+      queueManager="${ibmmq-queue-manager}"
+      userName="${ibmmq-username}"
+      password="${ibmmq-password}"
+      transportType="CLIENT" />
+  <!-- end::properties.wmqjmsra[] -->
+  </jmsConnectionFactory>
+  <!-- end::jmsConnectionFactory[] -->
+
+  <!-- tag::jmsQueue[] -->
+  <jmsQueue id="InventoryQueue" jndiName="jms/InventoryQueue">
+    <!-- tag::baseQueueName[] -->
+    <properties.wmqjmsra baseQueueName="${ibmmq-inventory-queue-name}"/>
+    <!-- end::baseQueueName[] -->
+  </jmsQueue>
+  <!-- end::jmsQueue[] -->
+
+  <!-- tag::resourceAdapter[] -->
+  <resourceAdapter id="wmqjmsra"
+    location="https://repo.maven.apache.org/maven2/com/ibm/mq/wmq.jakarta.jmsra/9.4.0.0/wmq.jakarta.jmsra-9.4.0.0.rar"/>
+  <!-- end::resourceAdapter[] -->
+
+  <logging consoleLogLevel="INFO"/>
+
+  <webApplication location="guide-jms-intro-system.war" contextRoot="/"/>
+
+</server>
